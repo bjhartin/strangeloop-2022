@@ -37,4 +37,20 @@ You may ask: what is the purpose of such obfuscation, if the values are close to
 - How many people have a credit score below 600 if I remove one person?
   - If that answer changes, I know that person's credit score is below 600.
 
+# Fully Homomorphic Encryption
+
+Homomorphic encryption is the idea that we can perform some computations without every decrypting the input data - probably more computations than we think.
+
+Suppose we were totaling some numbers.  What if we had functions such that:
+
+```
+encrypt(x + y) = encrypt(x) + encrypt(y)
+```
+
+If this were true, we could perform the addition without decrypting the values - meaning we could send encrypted data to another machine/function/actor for analysis and decrypt the results.
+
+Obviously we'd need to define '+' for encrypted values.  However, it turns out that if we can define only a few such functions, we can build almost any other - much like building logic circuits from NAND gates.  In the talk, Tejas implied that if we had two functions that act like + and *, [we can define arbitrary circuits of unbounded depth](https://en.wikipedia.org/wiki/Homomorphic_encryption#Description).
+
+There are libraries for this sort of thing, as [described in the wikipedia page](https://en.wikipedia.org/wiki/Homomorphic_encryption#Implementations).
+
 
