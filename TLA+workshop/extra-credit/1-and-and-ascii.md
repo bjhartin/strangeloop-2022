@@ -1,0 +1,3 @@
+The symbol for "and" in math, aka the "logical conjunction", is ⋀. We write it in ASCII like `/\`. And, in fact, this is *entire reason* why ASCII has a `\` as a symbol.
+
+Before everybody standardized on ASCII, programming languages would put all sorts of symbols in their syntax. ALGOL-60, one of the most influential languages of all time, used ⋀ for "and". The ASCII standardizers considered adding both ⋀ and ⋁ to the encoding but had an extremely limited symbol budget. And they knew they'd have to add `/` no matter what, as it was already used in English ("and/or"). So inventing `\` and telling the ALGOL people to write `\/` and `/\` saved them a symbol.
