@@ -53,4 +53,32 @@ Obviously we'd need to define '+' for encrypted values.  However, it turns out t
 
 There are libraries for this sort of thing, as [described in the wikipedia page](https://en.wikipedia.org/wiki/Homomorphic_encryption#Implementations).
 
+# Secure Multiparty Computationa
 
+Parties that jointly compute things may face the problem of sharing too much information with each other.  SMPC involves protocols which allow these inputs to be obscured or encrypted.  For example, suppose three people wish to agree on their average salary.
+
+```==
+joe:   100k
+jim:   200k
+jane:  300k
+```
+
+Rather than sending their salaries to each other, they break up their salary and each gets a piece.  They then sum the pieces.
+
+At this point, no party has any information that can be used to reconstruct another's salary.
+
+```
+      joe   jim   jane
+100    50    30     20
+200   -80   100    180
+300     0   350    -50
+
+sums  -30   480    150
+```
+
+However, the 'meaningless' sums can be added together and divided to get the true sum and average (600 and 200).  Each party can share their sum with the others without leaking information.
+
+## Resources
+
+- https://inpher.io/technology/what-is-secure-multiparty-computation.  My example came from this high-level explanation.
+- https://eprint.iacr.org/2017/1234.pdf is a white paper explaining the details
