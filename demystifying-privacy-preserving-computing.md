@@ -39,7 +39,7 @@ You may ask: what is the purpose of such obfuscation, if the values are close to
 
 Restating things, this strategy prevents such 'differential' attacks by ensuring that the two answers are not distinguishable.
 
-# Fully Homomorphic Encryption
+### Fully Homomorphic Encryption
 
 Homomorphic encryption is the idea that we can perform some computations without decrypting the input data - probably more computations than we think.
 
@@ -57,7 +57,7 @@ There are different levels of homomorphism in this context: _partially_, _somewh
 
 There are libraries for this sort of thing, as [described in the wikipedia page](https://en.wikipedia.org/wiki/Homomorphic_encryption#Implementations).
 
-# Secure Multiparty Computationa
+### Secure Multiparty Computationa
 
 Parties that jointly compute things may face the problem of sharing too much information with each other.  SMPC involves protocols which allow these inputs to be obscured or encrypted.  Consider a trivial example where three people wish to jointly compute their average salary.
 
@@ -92,7 +92,7 @@ joe   jim   jane
 
 These 'meaningless' sums can be shared without information loss.  Each party can compute a true total (600k) and average (200k) of the salaries without actually knowing them.
 
-## Resources
+#### Resources
 
 - https://inpher.io/technology/what-is-secure-multiparty-computation.  My example came from this high-level explanation.
 - https://eprint.iacr.org/2017/1234.pdf is a white paper explaining the details
