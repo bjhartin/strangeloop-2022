@@ -13,7 +13,7 @@ He was careful to distinguish privacy from protection, e.g.
 
 - Conference blurb: https://thestrangeloop.com/2022/demystifying-privacy-preserving-computing.html
 - Speaker: Tejas Chopra
-- Video
+- Video: TBD
 
 ## Details
 
