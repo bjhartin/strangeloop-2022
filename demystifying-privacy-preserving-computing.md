@@ -77,10 +77,10 @@ Rather than sending their salaries to each other, they break up their salary and
 (all numbers are in thousands)
 
 ```
-salaries      joe   jim   jane
-100            50    30     20
-200           -80   100    180
-300             0   350    -50
+salaries                   joe   jim   jane
+100  --- split into --->    50    30     20
+200                        -80   100    180
+300                          0   350    -50
 ```
 
 The individual sums are then:
