@@ -57,7 +57,7 @@ There are different levels of homomorphism in this context: _partially_, _somewh
 
 There are libraries for this sort of thing, as [described in the wikipedia page](https://en.wikipedia.org/wiki/Homomorphic_encryption#Implementations).
 
-### Secure Multiparty Computationa
+### Secure Multiparty Computation
 
 Parties that jointly compute things may face the problem of sharing too much information with each other.  SMPC involves protocols which allow these inputs to be obscured or encrypted.  Consider a trivial example where three people wish to jointly compute their average salary.
 
