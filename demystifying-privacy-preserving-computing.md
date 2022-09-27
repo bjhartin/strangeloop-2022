@@ -7,7 +7,7 @@ This speaker presented several methods which can be used to conduct computations
 He was careful to distinguish privacy from protection, e.g. 
 
 - Privatized data doesn't communicate sensitive information to anyone but, perhaps, the owner
-- An attack could leak some data.  Hopefully it is privatized
+- Privatization doesn't protect data from attacks.  An attack could obviously steal some data.  Hopefully it is privatized.
 
 ## Resources
 
