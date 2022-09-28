@@ -79,7 +79,7 @@ Like SQL, this involves a scheduler which is making decisions about an execution
 
 ### Background and Resources
 
-1- When computation was formally described, independently, by Turing, Church and Gödel in the early 20th century [2], Turing's model was used as the basis for computers as we know them.  His model involves thinking in sequences of steps and state changes.  We therefore learned to think about computation as _time_ and _change_.  The other models are more algebraic, replacing time with dependency and trading total orders for partial orders.
+1- When computation was formally described, independently, by Turing, Church and Gödel in the early 20th century [2], Turing's model was used as the basis for computers as we know them.  His model involves thinking in sequences of steps and state changes.  We therefore learned to think about computation in terms of _time_ and _change_.  The other models are more algebraic, replacing time with dependency and trading total orders for partial orders.
 
 2 - [Propositions as Types, Philip Wadler, Strangeloop](https://www.youtube.com/watch?v=IOiZatlZtGU)
 
