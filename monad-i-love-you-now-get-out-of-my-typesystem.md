@@ -45,7 +45,6 @@ This is achieved by marking referentially transparent functions with a `@node` a
 @node def g(x: Int): Int = x-3
 @node def h(x: Int): Int = 2*x
 @node def i(x: Int, y: Int, z: Int) = x + y + z
-def j(x: Int): Int = // Reads from file or something
 
 def i(x: Int, y: Int, z: Int): Int = {
   // Var used intentionally for example
@@ -55,7 +54,8 @@ def i(x: Int, y: Int, z: Int): Int = {
   val b = g(4)
   val c = h(5)
 
-  // extra code which is not ref. transp. - order matters
+  // Extra code which is not ref. transp. because it mutates shared state - order matters.
+  // This is a 'side effect' of the expressions.
   x = x + 1
   x = x * 2
 
