@@ -12,7 +12,8 @@ A set S of referentially transparent functions {f1, f2, ... fn}, which have no d
 - Conference blurb: https://thestrangeloop.com/2022/monad-i-love-you-now-get-out-of-my-type-system.html
 - Speaker: Gjeta Gjyshinca
 - Strangeloop video: TBD
-- [Talk from ScalaDays](https://www.youtube.com/watch?v=BW8S92jP5sE) - I think this is a better talk, actually - same presenter
+- [Talk 1 from ScalaDays 2018](https://www.youtube.com/watch?v=BW8S92jP5sE) - I think this is a better talk, actually - same presenter
+- [Talk 2 from ScalaDays 2018](https://www.youtube.com/watch?v=Svgh3mkHtWA) - Similar talk from a different ScalaDays
 
 
 ## Details
