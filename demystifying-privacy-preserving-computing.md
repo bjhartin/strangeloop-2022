@@ -60,7 +60,9 @@ Obviously we'd need to define '+' for encrypted values.  However, it turns out t
 
 There are different levels of homomorphism in this context: _partially_, _somewhat_, _leveled fully_ and _fully homomorphic_.  The level provided by a given encryption scheme will determine what kinds of things can be computed.  See the link below for more information.
 
-There are libraries for this sort of thing, as [described in the wikipedia page](https://en.wikipedia.org/wiki/Homomorphic_encryption#Implementations).
+This idea has been around for decades, but only recently has FHE become performant.  The Microsoft SEAL library has, supposedly, acceptable performance.
+
+Other libraries are [described in the wikipedia page](https://en.wikipedia.org/wiki/Homomorphic_encryption#Implementations).
 
 ### Secure Multiparty Computation
 
