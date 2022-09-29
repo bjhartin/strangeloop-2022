@@ -17,6 +17,7 @@ He was careful to distinguish privacy from protection, e.g.
 - [The Rise of Fully Homomorphic Encryption](https://queue.acm.org/detail.cfm?id=3561800)
 - https://inpher.io/technology/what-is-secure-multiparty-computation.  My example came from this high-level explanation.
 - https://eprint.iacr.org/2017/1234.pdf is a white paper explaining the details
+- [Is Homomorphic Encryption Ready to Deliver ...](https://www.techrepublic.com/article/is-homomorphic-encryption-ready-to-deliver-confidential-cloud-computing-to-enterprises)
 
 
 ## Details
