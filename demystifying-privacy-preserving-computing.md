@@ -14,6 +14,10 @@ He was careful to distinguish privacy from protection, e.g.
 - Conference blurb: https://thestrangeloop.com/2022/demystifying-privacy-preserving-computing.html
 - Speaker: Tejas Chopra
 - Video: TBD
+- [The Rise of Fully Homomorphic Encryption](https://queue.acm.org/detail.cfm?id=3561800)
+- https://inpher.io/technology/what-is-secure-multiparty-computation.  My example came from this high-level explanation.
+- https://eprint.iacr.org/2017/1234.pdf is a white paper explaining the details
+
 
 ## Details
 
@@ -91,8 +95,3 @@ joe   jim   jane
 ```
 
 These 'meaningless' sums can be shared without information loss.  Each party can compute a true total (600k) and average (200k) of the salaries without actually knowing them.
-
-#### Resources
-
-- https://inpher.io/technology/what-is-secure-multiparty-computation.  My example came from this high-level explanation.
-- https://eprint.iacr.org/2017/1234.pdf is a white paper explaining the details
