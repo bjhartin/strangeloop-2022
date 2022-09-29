@@ -97,4 +97,4 @@ joe   jim   jane
 -30   480    150
 ```
 
-These 'meaningless' sums can be shared without information loss.  Each party can compute a true total (600k) and average (200k) of the salaries without actually knowing them.
+These 'meaningless' sums can be shared without information loss.  Each party can compute a true total (600k) and average (200k) of the salaries without actually knowing them.  You might ask: Why isn't it sufficient for one party to do this?  One use case would be computations that seek consensus - did we all get the same answers?
