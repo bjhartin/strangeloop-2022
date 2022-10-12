@@ -51,7 +51,8 @@ Homomorphic encryption is the idea that we can perform some computations without
 Suppose we were totaling some numbers.  What if we had functions such that:
 
 ```
-encrypt(x + y) = encrypt(x) + encrypt(y)
+// Note two different '+' functions here - one for numbers and one for encrypted numbers
+encrypt(x + y) = encrypt(x) + encrypt(y) 
 ```
 
 We could perform the addition without decrypting the values - meaning we could send encrypted data to another machine/function/actor for analysis and decrypt the results.
