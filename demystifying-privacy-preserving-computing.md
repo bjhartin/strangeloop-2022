@@ -61,7 +61,7 @@ encrypt(x + y) = encrypt(x) + encrypt(y)
 
 We could perform the addition without decrypting the values - meaning we could send encrypted data to another machine/function/actor for analysis and decrypt the results.
 
-Obviously we'd need to define '+' for encrypted values.  However, it turns out that if we can define only a few such functions, we can build almost any other - much like building logic circuits from NAND gates.  In the talk, Tejas implied that if we had two functions that act like + and *, [we can define arbitrary circuits of unbounded depth](https://en.wikipedia.org/wiki/Homomorphic_encryption#Description).
+Obviously we'd need to define '+' for encrypted values.  However, it turns out that if we can define only a few such functions, we can build almost any other - much like building logic circuits from NAND gates.  In the talk, Tejas implied that if we had two functions that act like + and *, [we can define arbitrary circuits of unbounded depth](https://en.wikipedia.org/wiki/Homomorphic_encryption#Description).  This also seems to work if we have a small set of bitwise functions.  The main idea is building more complex functions as 'circuits' comprised of a small set of basis functions.
 
 There are different levels of homomorphism in this context: _partially_, _somewhat_, _leveled fully_ and _fully homomorphic_.  The level provided by a given encryption scheme will determine what kinds of things can be computed.  See the link below for more information.
 
