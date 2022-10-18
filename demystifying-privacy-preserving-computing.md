@@ -26,21 +26,25 @@ He was careful to distinguish privacy from protection, e.g.
 
 This is the concept of adding noise to each individual's data which can be averaged out for the purpose of computations at scale.  The noise obscures any indivual's sensitive information but computations can still be performed.  This is used at Apple, see three-page paper [here](https://www.apple.com/privacy/docs/Differential_Privacy_Overview.pdf).
 
-Due to the noise, individual queries are unlikely to learn anything.  Aggregations over large sets of data points average out this noise and provide good approximations of values, e.g. max salary in a population, etc.
+#### What is a Differential Privacy Attack?
 
-This is tunable by an 'epsilon' parameter which controls the strength of the privacy.  Accuracy grows with epsilon, but privacy diminishes.
+The term 'differential' privacy comes from a particular attack where someone compares the results computed from a data set, S1, with a copy of S1 having one more data point.  Ideally, this result is indistinguishable and hence, attackers find it hard to glean sensitive information.
 
-The term 'differential' privacy comes from comparing the results computed from a data set, S1, with a copy of S1 having one more data point.  Ideally, this result is indistinguishable and hence, attackers find it hard to glean sensitive information.
-
-Repeated queries can allow an attacker to determine this information, so a limit is needed, which is called the 'privacy budget'.
-
-This method doesn't work well for 'small' data sets, depending on the core calculation being performed.  In one [example](https://medium.com/georgian-impact-blog/a-brief-introduction-to-differential-privacy-eacf8722283b), a data set of 1800 points contained 3 for which a certain condition was true.  The 90% confidence interval for the result of the calculation was about 1.7 to 4.49, which is quite close to 3, when compared to 1800.
-
-You may ask: what is the purpose of such obfuscation, if the values are close to the truth?  Consider a situation in which the result is different between the set S1 and S1 + p1 (the additional data point).  If such is true, we know something about p!
+Consider a situation in which the result is different between the set S1 and S1 + p1 (the additional data point).  If such is true, we know something about p!
 
 - How many people have a credit score below 600, among all the encrypted scores in my set?
 - How many people have a credit score below 600 if I add Joe Smith?
   - If that answer increases, I know Joe's credit score is below 600.
+
+#### How Does this Method Provide Privacy?
+
+Due to adding the statistical noise, making two queries with sets S1 and S1 + p1 are very unlikely to produce different results.  Aggregations over large sets of data points average out this noise and provide good approximations of the desired statistics, e.g. max salary in a population, etc.
+
+This is tunable by an 'epsilon' parameter which controls the strength of the privacy.  Accuracy grows with epsilon, but privacy diminishes.
+
+Repeated queries can allow an attacker to determine this information, so a limit is needed, which is called the 'privacy budget'.
+
+This method doesn't work well for 'small' data sets, depending on the core calculation being performed.  In one [example](https://medium.com/georgian-impact-blog/a-brief-introduction-to-differential-privacy-eacf8722283b), a data set of 1800 points contained 3 for which a certain condition was true.  The 90% confidence interval for the result of the calculation was about 1.7 to 4.49, which is quite close to 3, when compared to 1800.
 
 Restating things, this strategy prevents such 'differential' attacks by ensuring that the two answers are not distinguishable.
 
