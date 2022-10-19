@@ -3,7 +3,7 @@
 
 ## Summary
 
-This speaker introduced a new library, 'Optimus Prime', which was developed at Morgan Stanley to allow Scala programmers to stop using monads like Future and cats' IO for concurrency.  Instead, it takes the following position:
+This speaker introduced a new library, 'Optimus Prime', which was developed at Morgan Stanley (one of the biggest Scala shops).  This library allows Scala programmers to stop using monads like Future and cats' IO for concurrency.  Instead, it takes the following position:
 
 A set S of referentially transparent functions {f1, f2, ... fn}, which have no dependencies on each other, may be executed in any order or, if resources allow, concurrently.
 
