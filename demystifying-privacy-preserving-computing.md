@@ -13,7 +13,7 @@ He was careful to distinguish privacy from protection, e.g.
 
 - Conference blurb: https://thestrangeloop.com/2022/demystifying-privacy-preserving-computing.html
 - Speaker: Tejas Chopra
-- Video: TBD
+- Video: [Youtube](https://www.youtube.com/watch?v=RkQ7F7cNFhk)
 - [The Rise of Fully Homomorphic Encryption](https://queue.acm.org/detail.cfm?id=3561800)
 - https://inpher.io/technology/what-is-secure-multiparty-computation.  My example came from this high-level explanation.
 - https://eprint.iacr.org/2017/1234.pdf is a white paper explaining the details
